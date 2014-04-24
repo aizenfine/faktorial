@@ -14,10 +14,14 @@ public class Faktorial {
         System.out.print("Input bilangan : ");
         int n=s.nextInt();
         int b=1;
+        System.out.println("");
+        System.out.print(n+"!= ");
         if(n>0){
-            for(int i=1;i<n;i++)
-            b=b*(n-i);
-            b=b*n;
+            for(int i=1;i<n;i++){
+                System.out.print(n+"x");
+                b=b*(n-i);
+                b=b*n;
+            }
         }
         else{
             b=1;
